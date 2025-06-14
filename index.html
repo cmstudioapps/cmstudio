@@ -1,71 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CM STUDIO</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-    <meta name="theme-color" content="#1a1a2e">
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "6e25e58b-4ddc-41ea-a561-9e9285fd21b9",
-    });
-  });
-</script>
+  <meta charset="UTF-8">
+  <title>Caio Dev - Banner</title>
+  <style>
+    body {
+      background-color: #111111;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      width: 350px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .card h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card h1 .emoji {
+      margin-right: 5px;
+    }
+
+    .card p {
+      color: #b5aaf2;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .checklist li {
+      margin-bottom: 10px;
+      color: #ffffff;
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .checklist li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #b5aaf2;
+    }
+
+    .destaque {
+      margin-bottom: 20px;
+      color: #b5aaf2;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: block;
+      background-color: #2f2b4d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .brand-icon {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #b5aaf2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #b5aaf2;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .brand-desc {
+      font-size: 12px;
+      color: #ddd;
+    }
+
+    .whatsapp {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      color: white;
+    }
+
+    .whatsapp::before {
+      content: "📱";
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">CM STUDIO</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero" id="hero">
-        <h2>Bem-vindo ao Futuro</h2>
-        <p>Criação de jogos e apps, experiências digitais únicas.</p>
-    </section>
+  <div class="card">
+    <h1><span class="emoji">🚀</span>Transforme sua ideia <br>em um aplicativo web!</h1>
+    
+    <p>Criação de apps sob medida<br> para o que você precisa.</p>
+    
+    <ul class="checklist">
+      <li>Layout personalizado</li>
+      <li>Funcionalidades exclusivas</li>
+      <li>Sem complicações<br> e com suporte direto</li>
+    </ul>
 
-    <section id="sobre" class="section sobre">
-        <h2>Sobre Nós</h2>
-        <p>A CM STUDIO é uma empresa indie focada na criação de jogos, apps e sites com temáticas inovadoras e imersivas.</p>
-    </section>
+    <p class="destaque">🛠️ Me diga sua ideia, e eu crio<br> o app ideal pra você</p>
+    
+    <a href="https://wa.me/5587991883720" class="btn">Fale comigo agora mesmo!</a>
+    
+    <div class="brand">
+      <div class="brand-icon">C</div>
+      <div>
+        <div class="brand-name">CAIO</div>
+        <div class="brand-desc">DESENVOLVIIMENTO DE APLICAÇÕES</div>
+      </div>
+    </div>
 
-    <section id="servicos" class="section servicos">
-        <h2>Serviços</h2>
-        <div class="service-item">Desenvolvimento de Jogos</div>
-        <div class="service-item">Desenvolvimento de APLICATIVOS</div>
-        <div class="service-item">Desenvolvimento de SITES</div>
-    </section>
+    <div class="whatsapp">87991883720</div>
+  </div>
 
-    <section id="projetos" class="section projetos">
-        <h2>Projetos</h2>
-        <div class="projeto-item">Aplicativo e site PlayBook:
-        <br>
-        <img src="PB.png" alt="">
-        </div>
-        
-    </section>
-
-    <section id="contato" class="section contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para contratação de serviços.</p>
-        <br>
-        <a href="https://www.instagram.com/caiomultiversando?igsh=YzljYTk1ODg3Zg==" class="contact-button">Enviar mensagem</a>
-    </section>
-
-  <footer class="footer">
-    <p>CM STUDIO - Projeto Indie</p>
-    <p>Explorando o futuro com criatividade</p>
-</footer>
 </body>
 </html>
